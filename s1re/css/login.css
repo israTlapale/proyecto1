@@ -1,0 +1,126 @@
+:root {
+    --fondo: #45586a;
+}
+* {
+    font-family:'Montserrat', sans-serif;    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    background: var(--fondo);
+}
+
+.contenedor-logo {  
+    background-color: var(--fondo);
+    height: 16rem;
+    display: flex;
+}
+
+img {
+    height: 7rem;
+    margin: auto auto;
+}
+
+.formulario-contenedor {
+    display: block;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    height: 39rem;
+    width: 29rem;
+    padding: 1rem;
+    border-radius: .4rem;           
+}
+
+h2 {
+    padding: .2rem;
+    text-align: center;
+    color: var(--fondo);
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+.formulario {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-campo {
+    padding-top: 1rem;
+    
+    font-size: 1em;
+    padding-bottom: .5rem;
+}
+
+label {
+    font-size: .9em;
+    font-weight: 500;
+    
+}
+
+.contenedor-campo {
+    display: flex;
+    width: 100%;       
+}
+
+span {
+    border: 1px solid #ced4da;
+    /* border-right: none; */
+    border-radius: .25rem 0px 0px .25rem;
+}
+
+input {
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-left-width: initial;
+    border-left-style: none;
+    border-left-color: initial;
+    border-radius: 0px .25rem .25rem 0px;
+    width: 100%;
+          
+}
+
+.icono {
+    height: 2.5rem;
+    color: var(--fondo);
+    padding: 1rem;   
+    margin:auto;    
+}
+
+.iniciar-contenedor {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+
+
+.restaurar-contraseña {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.iniciar-sesion {
+    padding: .5rem 1.2rem;
+    color: #fff;
+    background-color: #45586a;
+    border: #45586a;
+    border-radius: .4rem;
+
+}
+
+a {
+    color: var(--fondo);
+    text-align: right;
+   
+}
+
+.pie-pagina {
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+}
