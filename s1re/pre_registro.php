@@ -74,11 +74,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                             $fila = $resultado->fetch_assoc();
                             echo "<div class='registro-detalle'>";
                             echo "<h2>Datos de la constancia</h2><hr>";
-                            echo "<div class='detalle-item'>Nombre: <div class='respuesta-item'>" . $fila['nombre'] . "</div></div>";
-                            echo "<div class='detalle-item'>CUR: <div class='respuesta-item'>" . $fila['cur'] . "</div></div>";
-                            echo "<div class='detalle-item'>Fecha de Admisión: <div class='respuesta-item'>" . $fila['fecha_admision'] . "</div></div>";
-                            echo "<div class='detalle-item'>Área de Recepción: <div class='respuesta-item'>" . $fila['area_recepcion'] . "</div></div>";
-                            echo "<div class='detalle-item'>Área de Registro: <div class='respuesta-item'>" . $fila['area_registro'] . "</div></div>";
+                            echo "<div class='detalle-item'>Nombre: </div><div class='respuesta-item'>" . $fila['nombre'] . "</div>";
+                            echo "<div class='detalle-item'>CUR: </div><div class='respuesta-item'>" . $fila['cur'] . "</div>";
+                            echo "<div class='detalle-item'>Fecha de Admisión: </div><div class='respuesta-item'>" . $fila['fecha_admision'] . "</div>";
+                            echo "<div class='detalle-item'>Área de Recepción: </div><div class='respuesta-item'>" . $fila['area_recepcion'] . "</div>";
+                            echo "<div class='detalle-item'>Área de Registro: </div><div class='respuesta-item'>" . $fila['area_registro'] . "</div>";
                             echo "</div>";
                         } else {
                             echo "No se encontró el registro especificado.";
