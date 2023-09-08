@@ -41,7 +41,9 @@
                         echo "<ul>";
                         while ($fila = $resultado->fetch_assoc()) {
                             $id_registro = $fila['id']; // Suponiendo que haya una columna 'id' en tu tabla
-                            echo "<li>Nombre: {$fila['nombre']} - CUR: {$fila['cur']} - <a href='ver_registro.php?id=$id_registro'>Ver Detalles</a> - <a href='editar_registro.php?id=$id_registro'>Editar</a> - Eliminar</li>";
+                            echo "<li>Nombre: {$fila['nombre']} - CUR: {$fila['cur']} - <a href='ver_registro.php?id=$id_registro'>Ver Detalles</a> - <a href='editar_registro.php?id=$id_registro'>Editar</a> - <a href='php/eliminar_registro.php?id=$id_registro'>Eliminar</a>
+
+                            </li>";
                         }
                         echo "</ul>";
                     } else {

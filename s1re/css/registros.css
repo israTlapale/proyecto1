@@ -97,5 +97,11 @@ select {
 }
 
 .qr {
-    width: 300px;
+    width: 30rem;
+    height: 30rem;
+}
+.detalle-item, .respuesta-item {
+    padding: 1.2rem;
+    
+
 }
