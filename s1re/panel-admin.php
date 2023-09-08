@@ -53,8 +53,8 @@
                             echo "<td>{$fila['nombre']}</td>";
                             echo "<td>{$fila['cur']}</td>";
                             echo "<td>
-                <a href='pre_registro.php?id=$id_registro'>Vista Usuario</a> -
-                <a href='editar_registro.php?id=$id_registro'>Editar y (QR)</a> -
+                <a href='pre_registro.php?id=$id_registro'>Vista-Usuario</a> -
+                <a href='editar_registro.php?id=$id_registro'>Editar</a> -
                 <a href='php/eliminar_registro.php?id=$id_registro'>Eliminar</a>
                 <br></td>";
                             echo "</tr>";
