@@ -64,7 +64,7 @@
     </footer>
 
 
-    <script src="js/validacion.js"></script>
+    <script src="validacion.js"></script>
 </body>
 
 </html>

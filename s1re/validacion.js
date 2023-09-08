@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Verifica si los valores son "1" y "2"
         if (usuario === "Capitan" && contraseña === "Maravatio") {
             // Redirige al usuario a un enlace
-            window.location.href = "../panel-admin.php";
+            window.location.href = "panel-admin.php";
         } else {
             alert("Contraseña Incorrecta");
         }

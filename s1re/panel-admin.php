@@ -20,7 +20,16 @@
     <main>
         <section>
             <a href="nuevo-registro.php">Crear Registro.</a>
-            <div><?php
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>CUR</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
                     // Conexión a la base de datos (ya deberías tener esto configurado)
                     $host = '194.195.84.154';
                     $usuario = 'u918700630_isra';
@@ -38,14 +47,18 @@
                     $resultado = $conexion->query($sql);
 
                     if ($resultado->num_rows > 0) {
-                        echo "<ul>";
                         while ($fila = $resultado->fetch_assoc()) {
                             $id_registro = $fila['id']; // Suponiendo que haya una columna 'id' en tu tabla
-                            echo "<li>Nombre: {$fila['nombre']} - CUR: {$fila['cur']} - <a href='ver_registro.php?id=$id_registro'>Ver Detalles</a> - <a href='editar_registro.php?id=$id_registro'>Editar</a> - <a href='php/eliminar_registro.php?id=$id_registro'>Eliminar</a>
-
-                            </li>";
+                            echo "<tr>";
+                            echo "<td>{$fila['nombre']}</td>";
+                            echo "<td>{$fila['cur']}</td>";
+                            echo "<td>
+                <a href='pre_registro.php?id=$id_registro'>Vista Usuario</a> -
+                <a href='editar_registro.php?id=$id_registro'>Editar y (QR)</a> -
+                <a href='php/eliminar_registro.php?id=$id_registro'>Eliminar</a>
+                <br></td>";
+                            echo "</tr>";
                         }
-                        echo "</ul>";
                     } else {
                         echo "No se encontraron registros en la tabla.";
                     }
@@ -54,7 +67,8 @@
                     $conexion->close();
                     ?>
 
-            </div>
+                </tbody>
+            </table>
 
 
         </section>
