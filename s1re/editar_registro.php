@@ -117,7 +117,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <hr>
                 <div class="idioma">
                     <h2>Código QR para ver el registro:</h2>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?php echo urlencode($enlace_ver_registro); ?>" alt="Código QR">
+                    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?php echo urlencode($enlace_ver_registro); ?>" alt="Código QR">
 
                 </div>
             </div>
