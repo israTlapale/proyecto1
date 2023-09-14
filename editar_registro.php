@@ -7,7 +7,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     exit; // Detener la ejecución si el ID no es válido
 }
 
-$enlace_ver_registro = "http://www.pilotosiree.com/sire/s1re/pre_registro.php?id=$id_registro";
+$enlace_ver_registro = "http://www.pilotosiree.com/sire/pre_registro.php?id=$id_registro";
 // Conexión a la base de datos (ya deberías tener esto configurado)
 $host = '194.195.84.154';
 $usuario = 'u918700630_isra';
