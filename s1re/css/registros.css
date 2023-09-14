@@ -1,0 +1,143 @@
+:root {
+    --fondo: #45586a;
+    --colornotificacion: rgba(0, 255, 0, 0.3);
+}
+* {
+    font-family:'Montserrat', sans-serif;    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    
+    background: #fff;
+}
+
+.contenedor-logo {  
+    background-color: var(--fondo);
+    height: 8rem;
+    display: flex;
+}
+.contenedor-datos{
+    display: flex;
+}
+
+img {
+    height: 6rem;
+    margin: auto auto auto 1rem;
+}
+
+.contenedor{
+    display: block;
+    background-color: #fff;
+    height: 100%;
+    padding: 1rem;
+}
+
+.contenedor-notificacion{
+    height: 2rem;
+    padding: .5rem;
+   
+}
+
+.notificacion {
+    background-color: var(--colornotificacion);
+    margin: 1rem; 
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    border-radius: .4rem;
+    padding: .1rem;
+}
+.texto-notificacion {
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    margin: 0%;
+    font-size: 1.1rem;
+}
+
+.contenedor-datos{
+    padding-top: .8rem;
+}
+
+.dato{
+    font-size: 1.2rem;
+    
+}
+
+.respuesta {
+    font-size: 1.3rem;
+    padding-bottom: .6rem;
+}
+
+.idioma {
+    display: flex;
+    width: 100%;
+    display: block;   
+}
+
+.idioma-texto {
+    margin-bottom: .2rem;
+    font-size: 1.1rem;
+}
+
+select {
+    width: 100%;
+    border-radius: .3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.pie-pagina {
+    color: black;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+
+.qr {
+    width: 30rem;
+    height: 30rem;
+}
+
+
+h2 {
+    margin: 0%;
+}
+
+
+
+
+h3 {
+   
+    padding-top: 2rem;
+    margin: 4rem, 0, 0, 0;
+}
+
+.dato {
+    font-size: 1.2rem;
+    padding-top: 1rem; /* Agregamos un margen superior para separar los h3 */
+}
+
+.respuesta-item {
+    font-size: 1.3rem;
+    padding-bottom: 0; /* Eliminamos el margen inferior para acercar los párrafos a los h3 */
+}
+/* Agrega estos estilos a tu archivo CSS */
+.detalle-item {
+    display: block; /* Establece 'block' para que los elementos se muestren uno debajo del otro */
+}
+
+/* Añade un margen superior al título para separarlo de los elementos */
+h2 {
+    margin-top: 1rem;
+}
+
+/* Opcionalmente, puedes agregar más espaciado entre los elementos si es necesario */
+.respuesta-item {
+    margin-bottom: 1rem; /* Agrega espacio entre los elementos del detalle */
+}
