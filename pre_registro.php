@@ -53,7 +53,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 </div>
                 <div class="contenedor-titulo-datos"></div>
 
-                <div class="contenedor-datos">
+                <div class="contenedordatos">
                     <?php
 
 
