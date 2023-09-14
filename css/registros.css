@@ -21,7 +21,7 @@ body {
     display: flex;
 }
 .contenedor-datos{
-    display: flex;
+    display: block;
 }
 
 img {
