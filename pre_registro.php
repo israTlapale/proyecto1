@@ -32,9 +32,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIRE</title>
-    <link rel="preload" href="css/normalize.css" as="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="preload" href="css/registros.css" as="stylesheet">
+    <link rel="preload" href="css/registros.css" as="style">
     <link href="css/registros.css" rel="stylesheet">
 </head>
 
@@ -49,7 +49,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
             <div class="contenedor">
                 <div class="notificacion">
-                    <p class="texto-notificacion">La constancia de trámite con CUR <?php echo $cur_actual; ?> es válida</p>
+                    <p class="texto-notificacion">La constancia de trámite con <b>CUR <?php echo $cur_actual; ?></b> es válida</p>
                 </div>
                 <div class="contenedor-titulo-datos"></div>
 
@@ -72,14 +72,13 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                         if ($resultado->num_rows == 1) {
                             // Mostrar los detalles del registro
                             $fila = $resultado->fetch_assoc();
-                            echo "<div class='registro-detalle'>";
+
                             echo "<h2>Datos de la constancia</h2><hr>";
-                            echo "<div class='detalle-item'>Nombre: </div><div class='respuesta-item'>" . $fila['nombre'] . "</div>";
-                            echo "<div class='detalle-item'>CUR: </div><div class='respuesta-item'>" . $fila['cur'] . "</div>";
-                            echo "<div class='detalle-item'>Fecha de Admisión: </div><div class='respuesta-item'>" . $fila['fecha_admision'] . "</div>";
-                            echo "<div class='detalle-item'>Área de Recepción: </div><div class='respuesta-item'>" . $fila['area_recepcion'] . "</div>";
-                            echo "<div class='detalle-item'>Área de Registro: </div><div class='respuesta-item'>" . $fila['area_registro'] . "</div>";
-                            echo "</div>";
+                            echo "<div class='detalle-item'><h3>Nombre: </h3></div><div class='respuesta-item'>" . $fila['nombre'] . "</div>";
+                            echo "<div class='detalle-item'><h3>CUR: </h3></div><div class='respuesta-item'>" . $fila['cur'] . "</div>";
+                            echo "<div class='detalle-item'><h3>Fecha de Admisión: </h3></div><div class='respuesta-item'>" . $fila['fecha_admision'] . "</div>";
+                            echo "<div class='detalle-item'><h3>Área de Recepción: </h3></div><div class='respuesta-item'>" . $fila['area_recepcion'] . "</div>";
+                            echo "<div class='detalle-item'><h3>Área de Registro: </h3></div><div class='respuesta-item'>" . $fila['area_registro'] . "</div>";
                         } else {
                             echo "No se encontró el registro especificado.";
                         }

@@ -11,13 +11,16 @@ html{
 }
 
 body {
-    font-size: 16px;
+    
     background: #fff;
 }
 
 .contenedor-logo {  
     background-color: var(--fondo);
     height: 8rem;
+    display: flex;
+}
+.contenedor-datos{
     display: flex;
 }
 
@@ -100,10 +103,27 @@ select {
     width: 30rem;
     height: 30rem;
 }
-.detalle-item, .respuesta-item {
-    height: 4.5rem;
-}
+
 
 h2 {
     margin: 0%;
+}
+
+
+
+
+h3 {
+   
+    padding-top: 2rem;
+    margin: 4rem, 0, 0, 0;
+}
+
+.dato {
+    font-size: 1.2rem;
+    padding-top: 1rem; /* Agregamos un margen superior para separar los h3 */
+}
+
+.respuesta-item {
+    font-size: 1.3rem;
+    padding-bottom: 0; /* Eliminamos el margen inferior para acercar los párrafos a los h3 */
 }
